@@ -1,12 +1,18 @@
-<form action="/add" method="post">
-    <input type="text" name="name" placeholder="Name">
-    <input type="file" name="img" placeholder="img">
-    <input type="number" name="price" placeholder="price">
-    <input type="number" name="discount" placeholder="dicscount">
-    <input type="number" name="star" placeholder="star">
-    <input type="text" name="brand" placeholder="brand">
-    <input type="text" name="country" placeholder="Country">
-    <select name="catalog" id="catalog">
+<div class="container">
+    <form action="/add/p" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="file" name="img" placeholder="img">
+        <input type="number" name="price" placeholder="price">
+        <input type="number" name="discount" placeholder="dicscount">
+        <input type="number" name="star" placeholder="star">
+        <input type="text" name="brand" placeholder="brand">
+        <input type="text" name="country" placeholder="Country">
+        <select name="type" id="type">
+            <option value="discount">Discount</option>
+            <option value="New">New</option>
+            <option value="Old">Old</option>
+        </select>
+        <select name="catalog" id="catalog">
             <option value="Молоко, сыр, яйцо">Молоко, сыр, яйцо</option>
             <option value="Хлеб">Хлеб</option>
             <option value="Фрукты и овощи">Фрукты и овощи</option>
@@ -20,7 +26,8 @@
             <option value="Детское питание">Детское питание</option>
             <option value="Мясо, птица, колбаса">Мясо, птица, колбаса</option>
             <option value="Непродовольственные товары">Непродовольственные товары</option>
-    </select>
-    <input type="number" name="weight" placeholder="weight in gramm">
-    <input type="submit">
-</form>
+        </select>
+        <input type="number" name="weight" placeholder="weight in gramm">
+        <input type="submit">
+    </form>
+</div>

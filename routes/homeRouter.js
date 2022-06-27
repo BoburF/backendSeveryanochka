@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const Mongo = require('../model/Mongo')
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
+    const product = await Mongo.find()
     res.render('home.hbs',{
         title: 'Home page',
+        product
     })
 });
 
